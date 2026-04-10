@@ -27,6 +27,7 @@ nav a{
 margin:0 10px;
 text-decoration:none;
 color:#4b3832;
+transition:0.3s;
 }
 
 nav a:hover{
@@ -45,14 +46,19 @@ background:linear-gradient(135deg,#e6d3c3,#bfa18f);
 border-radius:0 0 40px 40px;
 }
 
-/* Profile Photo */
+/* Profile */
 .profile-pic{
 width:150px;
 height:150px;
 border-radius:50%;
 margin-top:20px;
 object-fit:cover;
-box-shadow:0 5px 15px rgba(0,0,0,0.2);
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+transition:0.4s;
+}
+
+.profile-pic:hover{
+transform:scale(1.1) rotate(5deg);
 }
 
 /* Button */
@@ -64,14 +70,21 @@ background:#8b5e3c;
 color:white;
 border-radius:8px;
 cursor:pointer;
+transition:0.3s;
 }
 
-/* Cards */
+button:hover{
+background:#6f4a2f;
+transform:scale(1.05);
+}
+
+/* 3D CARDS */
 .card-container{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
+gap:25px;
 margin-top:20px;
+perspective:1000px;
 }
 
 .card{
@@ -79,29 +92,37 @@ background:#fff;
 padding:20px;
 border-radius:15px;
 transition:0.4s;
+transform-style:preserve-3d;
 }
 
 .card:hover{
-transform:rotateY(10deg) rotateX(10deg) scale(1.05);
-box-shadow:0 20px 40px rgba(0,0,0,0.2);
+transform:rotateY(15deg) rotateX(15deg) scale(1.07);
+box-shadow:0 25px 50px rgba(0,0,0,0.3);
 }
 
-/* Slider */
+/* CERTIFICATE SLIDER */
 .slider{
 width:320px;
 margin:auto;
+perspective:1000px;
 }
 
 .slide{
 display:none;
 width:100%;
 border-radius:10px;
+transition:0.5s;
 }
 
 .slide.active{
 display:block;
 }
 
+.slide:hover{
+transform:scale(1.05) rotateY(10deg);
+}
+
+/* Buttons */
 .slider-buttons button{
 margin:10px;
 }
