@@ -15,22 +15,36 @@
 <h2>Riya Kodle</h2>
 <nav>
 <a href="#home">Home</a>
+<a href="#about">About</a>
 <a href="#projects">Projects</a>
 <a href="#certificates">Certificates</a>
 <a href="#contact">Contact</a>
 </nav>
 </header>
 
+<!-- HERO -->
 <section id="home" class="hero">
 <h1>Hello, I'm Riya 👋</h1>
 <p>B.Tech CSE Student | Future Data Scientist</p>
 
 <!-- YOUR PHOTO -->
-<img src="myphoto.jpg" class="profile-pic">
+<img src="myphoto.jpg" class="profile-pic"
+onerror="this.src='https://via.placeholder.com/150'">
 
 <button onclick="welcomeMsg()">Say Hi</button>
 </section>
 
+<!-- ABOUT -->
+<section id="about">
+<h2>About Me</h2>
+<p>
+I am a 1st year B.Tech CSE student at MIT Vishwaprayag University.
+I am currently building my foundation in programming, AI, and problem-solving.
+My goal is to pursue an MS degree and become a Data Scientist solving real-world problems.
+</p>
+</section>
+
+<!-- PROJECTS -->
 <section id="projects">
 <h2>Projects</h2>
 <div class="card-container">
@@ -41,14 +55,27 @@
 </div>
 </section>
 
-<!-- CERTIFICATE SLIDER -->
+<!-- CERTIFICATES -->
 <section id="certificates">
 <h2>Certificates</h2>
 
 <div class="slider">
-<img src="cert1.jpg" class="slide active">
-<img src="cert2.jpg" class="slide">
-<img src="cert3.jpg" class="slide">
+
+<a href="cert1.jpg" target="_blank">
+<img src="cert1.jpg" class="slide active"
+onerror="this.src='https://via.placeholder.com/300'">
+</a>
+
+<a href="cert2.jpg" target="_blank">
+<img src="cert2.jpg" class="slide"
+onerror="this.src='https://via.placeholder.com/300'">
+</a>
+
+<a href="cert3.jpg" target="_blank">
+<img src="cert3.jpg" class="slide"
+onerror="this.src='https://via.placeholder.com/300'">
+</a>
+
 </div>
 
 <div class="slider-buttons">
@@ -56,8 +83,10 @@
 <button onclick="nextSlide()">➡</button>
 </div>
 
+<p>👉 Click image to open full certificate</p>
 </section>
 
+<!-- CONTACT -->
 <section id="contact">
 <h2>Contact</h2>
 <p>Email: riyakodle@gmail.com</p>
